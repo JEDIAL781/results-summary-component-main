@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "my font";
+  src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intro {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(234, 85%, 45%, 0.8)
+  );
+
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 30px 30px;
+}
+.intro h1 {
+  opacity: 0.7;
+}
+.rounded-bg {
+  background-color: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1) hsla(241, 72%, 46%, 0)
+  );
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.rounded-bg p:first-child {
+  font-size: 50px;
+}
+.rounded-bg p:last-child {
+  opacity: 0.8;
+}
+.intro-text {
+  opacity: 0.8;
+  width: 80%;
+  margin: 0px auto;
+}
+/*summary section*/
+.summary {
+  background-color: beige;
+  padding: 50px 30px;
+}
+.summary h1 {
+  color: hsl(224, 30%, 27%);
+}
+.Category {
+  border-top: 1px solid red;
+  margin: 10px 3px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: red;
+  color: azure;
+  padding: 16px;
+  display: flex;
+}
+.Catogory-percentage {
+  color: hsl(240, 7%, 67%);
+}
+.Category-score {
+  color: hsl(224, 30%, 27%);
+}
+.Category.reactions {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+.Category.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+.Category.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+.Category.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+.button {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+}
+@media screen and (min-width: 600px) {
+  main {
+    display: flex;
+    margin: 100px;
+    max-width: 800px;
+    border-radius: 30px;
+    box-shadow: 9px 13px 40px -8px hsl(252, 100%, 67%);
+  }
+  .intro {
+    flex: 1;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .summary {
+    flex: 1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
